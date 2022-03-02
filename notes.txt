@@ -1,0 +1,74 @@
+    1  ifconfig
+    2  restart
+    3  shutdown
+    4  help shutdown
+    5  ifconfig
+    6  ifconfig
+    7  ls
+    8  ifconfig
+    9  netstat
+   10  netstat pi
+   11  netstat -u pi
+   12  top
+   13  shutdown
+   14  shutdown --help
+   15  shutdown -r
+   16  shutdown -c
+   17  shutdown --reboot
+   18  shutdown --reboot -10 -
+   19  shutdown -reboot -10 -
+   20  shutdown -reboot -10 
+   21  shutdown -r 
+   22  shutdown -r -10
+   23  shutdown -r -0
+   24  shutdown -r -
+   25  shutdown -r 
+   26  sudo shutdown -r
+   27  ls
+   28  time
+   29  ifconfig
+   30  sudo raspi-config
+   31  ifconfig wlan0
+   32  iwconfig wlan0
+   33  iwconfig wlan0 dragneta TomislavMelentijevic
+   34  iwconfig wlan0 essid dragneta TomislavMelentijevic
+   35  dhclient
+   36  sudo dhclient
+   37  sudo iwconfig wlan0 essid dragneta TomislavMelentijevic
+   38  sudo iwlist wlan0 scan
+   39  sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+   40  cat /etc/wpa_supplicant/wpa_supplicant.conf
+   41  sudo cat /etc/wpa_supplicant/wpa_supplicant.conf
+   42  ifconfig wlan0
+   43  wlan0
+   44  ifconfig wlan0
+   45  sudo reboot
+   46  ifconfig
+   47  ls
+   48  cd clawproject/
+   49  ls
+   50  python3 app.py
+   51  source /bin/activate
+   52  source bin/activate
+   53  python3 app.py
+   54  cat app.py
+   55  python3 app.py
+   56  sudo apt-get update
+   57  sudo apt-get install rpi.gpio
+   58  python3 app.py
+   59  sudo apt-get -y install python3-rpi.gpio
+   60  python3 app.py
+   61  python3 -m pip install RPi.GPIO
+   62  python3 app.py
+   63  source bin/activate
+   64  python3 app.py
+   65  sudo python3 app.py
+   66  history
+   67  history > notes.tx
+   
+   sudo apt-get -y install python3-rpi.gpio
+   deactivate
+   source bin/activate
+   python3 -m pip install
+   sudo -H pip3 install flask ---------this one was working for me on pi 4
+   

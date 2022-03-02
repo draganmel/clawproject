@@ -1,0 +1,26 @@
+How to Run a Raspberry Pi Program on Startup 
+
+cd clawproject/
+ 
+cat etc/rc.local
+cat /etc/rc.local
+sudo python3 /home/dm/clawproject/app.py
+python3 /home/dm/clawproject/app.py
+ 
+    sudo nano /etc/rc.local
+in rc.local put this 2 lines
+
+#!/bin/sh -e
+python3 /home/dm/clawproject/app.py &
+
+
+  test to see it going to run:  python3 /home/dm/clawproject/app.py
+ 
+  sudo nano /etc/rc.local
+  make rc.local executive
+  sudo chmod +x /etc/rc.local
+  sudo systemctl enable rc-local
+  sudo systemctl status rc-local
+  sudo systemctl start rc-local
+
+after this restart Raspberry and it will start app.py automaticaly on startup
