@@ -12,10 +12,11 @@
 </head>
 
 <body>
+   
    <h1>Claw Web Server Testing</h1>
    {% for pin in pins %}   
    <h2>{{ pins[pin].name }}
-   {% if pins[pin].state == true %}
+   {% if pins[pin].state == false %}
       is currently 
       <strong>on</strong>
    </h2>
@@ -23,12 +24,7 @@
       <div class="col-md-2">
          <a href="/{{pin}}/off" class="btn2 btn btn-block btn-lg btn-default" role="button">Turn off</a>
       </div>
-      <div class="col-md-2">
-         <a href="/{{pin}}/off" class="btn1 btn btn-block btn-lg btn-primary" role="button">Auto Enabled</a>
-      </div>
-      <div class="col-md-2">
-         <input id="timerBTN" name="Timer" value="0"></input>
-      </div>
+     
    </div>
    {% else %}
       is currently 
@@ -38,29 +34,10 @@
       <div class="col-md-2">
           <a href="/{{pin}}/on" class="btn btn-block btn-lg btn-primary" role="button">Turn on</a>
       </div>
-      <div class="col-md-2">
-         <a href="/{{pin}}/on" class="btn btn-block btn-lg btn-default" role="button">Auto Disabled</a>
-      </div>
-      <div class="col-md-2">
-         <input id="timerBTN" name="Timer" value="0"></input>
-      </div>
+   
    </div>
    {% endif %}
    {% endfor %}
-   
-   
-
-<!-- 
-   <h2>Claw Modes<h2>
-   {% for mode in modes %}
-      {% if modes[mode].state == 'on' %}
-         <h2>{{mode}} is currently <strong>on</strong></h2><div class="row"><div class="col-md-2"><h2>
-         <a href="/mode/{{mode}}/off/" class="btn btn-block btn-lg btn-default" role="button">Turn off</a></div></div>
-      {% else %}
-         <h2>{{mode}} is currently <strong>off</strong></h2><div class="row"><div class="col-md-2"><h2>
-         <a href="/mode/{{mode}}/on/" class="btn btn-block btn-lg btn-primary" role="button">Turn on</a></div></div>
-      {% endif %}
-   {% endfor %}
- -->
+  
 </body>
 </html>

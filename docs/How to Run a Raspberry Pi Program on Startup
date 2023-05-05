@@ -2,7 +2,7 @@ How to Run a Raspberry Pi Program on Startup
 
 cd clawproject/
  
-cat etc/rc.local
+
 cat /etc/rc.local
 sudo python3 /home/dm/clawproject/app.py
 python3 /home/dm/clawproject/app.py
