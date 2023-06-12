@@ -154,3 +154,7 @@
 2023-05-04 17:19:52 - INFO - (Thread-5) - app - stop 2
 2023-05-04 17:19:54 - INFO - (Thread-6) - app - stop 3
 2023-05-04 17:19:56 - INFO - (Thread-7) - app - stop 3
+2023-05-04 18:42:56 - INFO - (MainThread) - app - RPi version: 3
+2023-05-04 18:42:56 - INFO - (MainThread) - app - GPIO version: 0.7.0
+2023-05-12 05:17:42 - INFO - (MainThread) - app - RPi version: 3
+2023-05-12 05:17:42 - INFO - (MainThread) - app - GPIO version: 0.7.0
